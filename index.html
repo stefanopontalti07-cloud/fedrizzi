@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- ANTEPRIMA: fuori da Google finche' il sito non va sul dominio vero -->
+<meta name="robots" content="noindex">
+<title>Tiziana Fedrizzi Studio Personal — personal trainer a Tione di Trento</title>
+<meta name="description" content="Studio di personal training a Tione di Trento, nelle Giudicarie. Allenamento uno a uno su appuntamento, programma scritto su misura e piano alimentare. Si prenota da WhatsApp.">
+<link rel="canonical" href="https://www.tizianafedrizzi.it/">
+<meta name="theme-color" content="#15211B">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='13' fill='%2315211B'/><text x='32' y='45' font-family='Georgia,serif' font-size='33' fill='%23F0F2ED' text-anchor='middle'>TF</text></svg>">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="it_IT">
+<meta property="og:title" content="Tiziana Fedrizzi Studio Personal — personal trainer a Tione di Trento">
+<meta property="og:description" content="Un'ora tua, uno alla volta. Allenamento personale su appuntamento a Tione di Trento: programma scritto su misura, niente sale piene, niente abbonamenti.">
+<meta property="og:url" content="https://www.tizianafedrizzi.it/">
+<meta property="og:image" content="https://stefanopontalti07-cloud.github.io/fedrizzi/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- Font serviti dal sito, non da Google: una richiesta a terzi in meno, niente CSS
+     bloccante (l'incidente Panorama del 16/08/2026) e nessun dato del visitatore che
+     esce verso un server americano. Con unicode-range il browser scarica solo il latino. -->
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/young-serif-latin.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/hanken-grotesk-latin.woff2" crossorigin>
+
+<style>
+@font-face{font-family:'Hanken Grotesk';font-style:normal;font-weight:400 700;font-display:swap;src:url(assets/fonts/hanken-grotesk-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Hanken Grotesk';font-style:normal;font-weight:400 700;font-display:swap;src:url(assets/fonts/hanken-grotesk-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Young Serif';font-style:normal;font-weight:400;font-display:swap;src:url(assets/fonts/young-serif-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Young Serif';font-style:normal;font-weight:400;font-display:swap;src:url(assets/fonts/young-serif-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+
+:root{
+  --ink:#15211B;
+  --paper:#F0F2ED;
+  --pine:#1E3A2C;
+  --accent:#C2431B;
+  --accent-bright:#E8613A;
+  --muted:#556055;
+  --paper-dim:#C3CFC4;
+  --line:#D4D9CF;
+  --line-dark:#33473B;
+
+  --serif:"Young Serif",Georgia,"Times New Roman",serif;
+  --sans:"Hanken Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;
+
+  --ease-out-quart:cubic-bezier(0.25,1,0.5,1);
+  --ease-out-quint:cubic-bezier(0.22,1,0.36,1);
+
+  --pad:clamp(1.25rem,5vw,4.5rem);
+  --wide:78rem;
+}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--sans);font-size:1.0625rem;line-height:1.6;
+  font-weight:400;-webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:.18em}
+h1,h2,h3{font-family:var(--serif);font-weight:400;text-wrap:balance;letter-spacing:-.022em;line-height:1.04;margin:0}
+p{margin:0}
+
+.wrap{max-width:var(--wide);margin:0 auto;padding-inline:var(--pad)}
+.lede{max-width:34ch}
+.prose{max-width:62ch}
+
+/* ---------- skip link ---------- */
+.skip{position:absolute;left:-9999px;top:0;z-index:99;background:var(--ink);color:#fff;padding:.7rem 1rem;border-radius:0 0 10px 0}
+.skip:focus{left:0}
+:focus-visible{outline:2.5px solid var(--accent);outline-offset:3px;border-radius:4px}
+
+/* ---------- bottoni ---------- */
+.btn{
+  display:inline-flex;align-items:center;gap:.55rem;
+  font-family:var(--sans);font-size:1rem;font-weight:600;line-height:1;
+  padding:.95rem 1.35rem;border-radius:12px;border:1.5px solid transparent;
+  text-decoration:none;cursor:pointer;
+  transition:background-color 180ms var(--ease-out-quart),border-color 180ms var(--ease-out-quart),color 180ms var(--ease-out-quart),transform 130ms var(--ease-out-quart);
+}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{background:#A93915}
+.btn-ghost{border-color:var(--ink);color:var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:var(--paper)}
+.btn:active{transform:translateY(1px)}
+.on-dark .btn-ghost{border-color:var(--paper-dim);color:var(--paper)}
+.on-dark .btn-ghost:hover{background:var(--paper);color:var(--ink)}
+.btn-sm{padding:.65rem 1rem;font-size:.95rem;border-radius:10px}
+
+/* ---------- header ---------- */
+.site{
+  position:sticky;top:0;z-index:40;background:var(--paper);
+  border-bottom:1px solid var(--line);
+}
+.site .bar{display:flex;align-items:center;gap:1.5rem;max-width:var(--wide);margin:0 auto;padding:.75rem var(--pad)}
+.wordmark{font-family:var(--serif);font-size:1.0625rem;line-height:1.15;color:var(--ink);text-decoration:none;margin-right:auto}
+.wordmark span{display:block;font-family:var(--sans);font-size:.72rem;font-weight:600;color:var(--muted);letter-spacing:.02em}
+.site nav{display:flex;gap:1.5rem}
+.site nav a{color:var(--ink);text-decoration:none;font-size:.95rem;font-weight:500;padding-bottom:2px;border-bottom:1.5px solid transparent;transition:border-color 200ms var(--ease-out-quart)}
+.site nav a:hover{border-bottom-color:var(--accent)}
+@media (max-width:820px){.site nav{display:none}}
+
+/* ---------- hero ---------- */
+.hero{padding-block:clamp(3rem,9vw,6.5rem) clamp(2.5rem,6vw,4rem)}
+.hero h1{font-size:clamp(2.9rem,10.5vw,5.25rem);letter-spacing:-.03em}
+.hero h1 .l2{display:block;color:var(--accent)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:clamp(1.75rem,5vw,4rem) clamp(2rem,6vw,5rem);align-items:start;margin-top:clamp(1.5rem,3vw,2.25rem)}
+@media (max-width:860px){.hero-grid{grid-template-columns:1fr;align-items:start}}
+.hero-grid p{font-size:clamp(1.0625rem,1.9vw,1.2rem);color:var(--ink)}
+.cta-row{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.75rem}
+
+.facts{display:grid;gap:.75rem;font-size:.97rem}
+.facts div{display:grid;grid-template-columns:auto;gap:.15rem;padding-top:.9rem;border-top:1px solid var(--line)}
+.facts .k{font-weight:600;color:var(--muted);font-size:.82rem;letter-spacing:.01em}
+.facts .v{color:var(--ink)}
+.facts a{color:var(--ink);text-decoration-color:var(--line)}
+
+/* ---------- fascia foto ---------- */
+.band{margin-top:clamp(2rem,5vw,3.25rem)}
+.ph{
+  position:relative;display:grid;place-items:center;text-align:center;
+  background:#E7EAE2;
+  border:1.5px dashed #AEBBAF;border-radius:14px;
+  color:var(--muted);padding:1.5rem;
+}
+.ph-wide{aspect-ratio:21/9}
+.ph-portrait{aspect-ratio:4/5}
+.ph-square{aspect-ratio:1}
+@media (max-width:700px){.ph-wide{aspect-ratio:4/3}}
+.ph b{display:block;font-family:var(--serif);font-weight:400;font-size:1.15rem;color:var(--ink);margin-bottom:.3rem}
+.ph small{font-size:.85rem;max-width:34ch;display:block}
+
+/* ---------- sezioni ---------- */
+section{scroll-margin-top:5rem}
+.s{padding-block:clamp(3.5rem,9vw,6.5rem)}
+.s h2{font-size:clamp(2rem,5.2vw,3.1rem)}
+.s-dark{background:var(--ink);color:var(--paper)}
+.s-dark h2,.s-dark h3{color:var(--paper)}
+.s-dark p{color:var(--paper-dim)}
+.s-pine{background:var(--pine);color:var(--paper)}
+.s-pine h2,.s-pine h3{color:var(--paper)}
+
+/* claim asimmetrici */
+.claims{margin-top:clamp(2rem,5vw,3rem);display:grid;gap:0}
+.claim{padding-block:clamp(1.6rem,3.5vw,2.3rem);border-top:1px solid var(--line-dark);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:clamp(1rem,4vw,3rem);align-items:start}
+.claim:first-child{border-top:0;padding-top:0}
+.claim h3{font-size:clamp(1.45rem,3.4vw,2.05rem)}
+.claim p{font-size:1.03rem;max-width:52ch}
+.claim:nth-child(2){padding-left:0}
+@media (min-width:900px){
+  .claim:nth-child(2){margin-left:6%}
+  .claim:nth-child(3){margin-left:12%}
+}
+@media (max-width:760px){.claim{grid-template-columns:1fr;gap:.6rem}}
+
+/* passaggi */
+.steps{margin-top:clamp(2.25rem,5vw,3.25rem);display:grid;gap:clamp(2rem,4vw,2.75rem)}
+@media (min-width:900px){
+  .steps{grid-template-columns:repeat(12,1fr);gap:clamp(2rem,3.5vw,3rem) clamp(1.5rem,3vw,2.5rem)}
+  .step:nth-child(1){grid-column:1/6}
+  .step:nth-child(2){grid-column:7/11}
+  .step:nth-child(3){grid-column:2/8}
+}
+.step{border-top:2px solid var(--ink);padding-top:1.1rem}
+.step h3{font-size:clamp(1.35rem,2.8vw,1.75rem);margin-bottom:.55rem}
+.step p{color:var(--muted);max-width:46ch}
+
+/* studio */
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(1.75rem,5vw,4rem);align-items:start;margin-top:clamp(2rem,4vw,3rem)}
+@media (max-width:860px){.two{grid-template-columns:1fr}}
+.hours{width:100%;border-collapse:collapse;margin-top:1.5rem;font-size:1rem}
+.hours th,.hours td{text-align:left;padding:.6rem 0;border-bottom:1px solid var(--line)}
+.hours th{font-weight:600;color:var(--muted);font-size:.9rem}
+.hours td:last-child{text-align:right;font-variant-numeric:tabular-nums}
+.note{font-size:.95rem;color:var(--muted);margin-top:1rem}
+
+/* citazione */
+.quote{margin-top:clamp(2rem,4vw,2.75rem);max-width:38ch}
+.quote blockquote{margin:0;font-family:var(--serif);font-size:clamp(1.5rem,4vw,2.3rem);line-height:1.22;color:var(--paper)}
+.quote figcaption{margin-top:1.1rem;font-size:.95rem;color:var(--paper-dim)}
+.score{display:flex;align-items:baseline;gap:.5rem;font-family:var(--serif);font-size:clamp(3rem,9vw,4.75rem);line-height:1;color:var(--accent-bright)}
+.score small{font-family:var(--sans);font-size:.95rem;font-weight:500;line-height:1.4;color:var(--paper-dim)}
+
+/* domande */
+.qa{margin-top:clamp(2rem,4vw,2.5rem);max-width:64ch}
+.qa details{border-top:1px solid var(--line)}
+.qa details:last-child{border-bottom:1px solid var(--line)}
+.qa summary{
+  cursor:pointer;list-style:none;padding:1.15rem 2rem 1.15rem 0;position:relative;
+  font-family:var(--serif);font-size:clamp(1.1rem,2.4vw,1.3rem);line-height:1.3;
+}
+.qa summary::-webkit-details-marker{display:none}
+.qa summary::after{
+  content:"";position:absolute;right:.25rem;top:1.5rem;width:.7rem;height:.7rem;
+  border-right:2px solid var(--accent);border-bottom:2px solid var(--accent);
+  transform:rotate(45deg);transition:transform 220ms var(--ease-out-quart);
+}
+.qa details[open] summary::after{transform:rotate(225deg)}
+.qa summary:hover{color:var(--accent)}
+.qa .a{padding:0 0 1.35rem;color:var(--muted);max-width:58ch}
+
+/* prenota */
+.book{display:grid;grid-template-columns:minmax(0,420px) minmax(0,1fr);gap:clamp(2rem,5vw,4rem);align-items:start;margin-top:clamp(2rem,4vw,3rem)}
+@media (max-width:900px){.book{grid-template-columns:1fr}}
+.contact{display:grid;gap:1.35rem}
+.contact .row{padding-top:1.1rem;border-top:1px solid var(--line)}
+.contact .k{font-size:.82rem;font-weight:600;color:var(--muted);letter-spacing:.01em;margin-bottom:.2rem}
+.contact .v{font-size:1.1rem}
+.contact .v a{color:var(--ink);text-decoration-color:var(--line)}
+.contact .v a:hover{color:var(--accent);text-decoration-color:currentColor}
+.map{width:100%;height:clamp(220px,32vw,300px);border:1px solid var(--line);border-radius:14px;display:block;margin-top:1.75rem;filter:saturate(.85)}
+
+/* footer */
+footer{background:var(--ink);color:var(--paper-dim);padding-block:clamp(2.5rem,6vw,4rem);font-size:.95rem}
+footer h2{font-size:1.3rem;color:var(--paper);margin-bottom:.4rem}
+.foot{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:2rem}
+footer a{color:var(--paper)}
+.fine{margin-top:2.5rem;padding-top:1.25rem;border-top:1px solid var(--line-dark);font-size:.85rem;display:flex;flex-wrap:wrap;gap:.5rem 1.5rem}
+
+/* ---------- motion: un momento firma + feedback CTA + stagger su una lista ---------- */
+@media (prefers-reduced-motion:no-preference){
+  .hero h1 .l2{animation:lineUp 620ms var(--ease-out-quart) 140ms both}
+  .step.is-in{animation:stepIn 520ms var(--ease-out-quint) both;animation-delay:var(--d,0ms)}
+}
+@keyframes lineUp{
+  from{clip-path:inset(0 0 104% 0);transform:translateY(.16em)}
+  to{clip-path:inset(-25% -5% -25% -5%);transform:none}
+}
+@keyframes stepIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+
+/* segnaposto testuali da sostituire */
+.tbc{background:#E3E7DE;color:var(--ink);border-bottom:1.5px dashed #94A596;padding:0 .2em;border-radius:3px}
+</style>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"HealthAndBeautyBusiness",
+  "@id":"https://www.tizianafedrizzi.it/#studio",
+  "name":"Tiziana Fedrizzi Studio Personal",
+  "description":"Studio di personal training a Tione di Trento: allenamento uno a uno su appuntamento, programma personalizzato e piano alimentare.",
+  "url":"https://www.tizianafedrizzi.it/",
+  "telephone":"+39 338 441 7252",
+  "email":"info@tizianafedrizzi.it",
+  "address":{
+    "@type":"PostalAddress",
+    "streetAddress":"Viale Dante 53",
+    "addressLocality":"Tione di Trento",
+    "addressRegion":"TN",
+    "postalCode":"38079",
+    "addressCountry":"IT"
+  },
+  "areaServed":["Tione di Trento","Giudicarie","Val Rendena","Preore","Pinzolo"],
+  "openingHoursSpecification":[{
+    "@type":"OpeningHoursSpecification",
+    "dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens":"08:00","closes":"22:00"
+  }],
+  "aggregateRating":{
+    "@type":"AggregateRating","ratingValue":"5","reviewCount":"4",
+    "url":"https://www.sportclubby.com/it/tione-di-trento/tiziana-fedrizzi-studio-personal"
+  },
+  "sameAs":[
+    "https://www.facebook.com/tizianafedrizzips/",
+    "https://www.sportclubby.com/it/tione-di-trento/tiziana-fedrizzi-studio-personal"
+  ]
+}
+</script>
+</head>
+
+<body id="top">
+<a class="skip" href="#prenota">Salta al modulo di prenotazione</a>
+
+<header class="site">
+  <div class="bar">
+    <a class="wordmark" href="#top">Tiziana Fedrizzi<span>Studio Personal · Tione di Trento</span></a>
+    <nav aria-label="Sezioni del sito">
+      <a href="#come">Come si lavora</a>
+      <a href="#studio">Lo studio</a>
+      <a href="#domande">Domande</a>
+    </nav>
+    <a class="btn btn-primary btn-sm" href="#prenota">Prenota</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero wrap">
+    <h1>Un'ora tua.<span class="l2">Uno alla volta.</span></h1>
+
+    <div class="hero-grid">
+      <div>
+        <p class="prose">Studio di personal training in Viale Dante, a Tione di Trento. Ti allena
+        una persona, con un programma scritto su come ti muovi tu — non su una scheda fotocopiata.
+        Su appuntamento: nessuna sala piena, nessun abbonamento da rinnovare.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#prenota">Prenota su WhatsApp</a>
+          <a class="btn btn-ghost" href="tel:+393384417252">Chiama ora</a>
+        </div>
+      </div>
+
+      <div class="facts">
+        <div>
+          <span class="k">Dove</span>
+          <span class="v"><a href="https://maps.google.com/?q=Viale+Dante+53,+38079+Tione+di+Trento" target="_blank" rel="noopener">Viale Dante 53, Tione di Trento</a></span>
+        </div>
+        <div>
+          <span class="k">Quando</span>
+          <span class="v">Da lunedì a venerdì, 8:00 – 22:00</span>
+        </div>
+        <div>
+          <span class="k">Telefono</span>
+          <span class="v"><a href="tel:+393384417252">338 441 7252</a></span>
+        </div>
+        <div>
+          <span class="k">Recensioni</span>
+          <span class="v">5,0 su 5 — 4 recensioni su Sportclubby</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOTO 1 — serve una foto vera dello studio (Passo 4 DESIGN.md). Nessuna stock photo. -->
+    <div class="band">
+      <div class="ph ph-wide">
+        <span>
+          <b>Qui va una foto dello studio</b>
+          <small>Anche fatta col telefono: la sala come è davvero, con la luce che c'è.
+          È la cosa che convince più di qualsiasi frase.</small>
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NON È UNA PALESTRA ============ -->
+  <section class="s s-dark on-dark">
+    <div class="wrap">
+      <h2>Non è una palestra.</h2>
+
+      <div class="claims">
+        <div class="claim">
+          <h3>C'è un appuntamento per volta.</h3>
+          <p>Quando entri, lo studio è tuo. Niente fila per la panca, niente specchi affollati,
+          nessuno che guarda quanto sollevi. Per molti è l'unico modo per ricominciare.</p>
+        </div>
+        <div class="claim">
+          <h3>Il programma parte da te.</h3>
+          <p>Prima di scriverlo guardo come ti muovi, cosa fai tutto il giorno, dove hai avuto
+          problemi. Poi cambia mentre cambi tu: non è un foglio che resta uguale per mesi.</p>
+        </div>
+        <div class="claim">
+          <h3>Conta anche quello che mangi.</h3>
+          <p>Allenamento e <span class="tbc">piano alimentare</span> vengono dalla stessa
+          persona, quindi vanno d'accordo. È metà del risultato, e di solito è la metà di cui
+          nessuno si occupa.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COME SI LAVORA ============ -->
+  <section class="s" id="come">
+    <div class="wrap">
+      <h2>Come si lavora</h2>
+      <p class="prose" style="margin-top:1.1rem;color:var(--muted)">Tre passaggi, sempre gli stessi,
+      dal primo messaggio in poi.</p>
+
+      <div class="steps">
+        <div class="step" style="--d:0ms">
+          <h3>Prima ci si conosce.</h3>
+          <p>Un incontro per parlare: cos'hai in mente, com'è andata finora, gli infortuni, quanto
+          tempo hai davvero. Guardo come ti muovi. Nessun impegno oltre a quell'ora.</p>
+        </div>
+        <div class="step" style="--d:70ms">
+          <h3>Poi si scrive il programma.</h3>
+          <p>Un percorso su di te, con gli obiettivi scritti e i tempi realistici — non quelli
+          da volantino. Se vuoi, insieme al piano alimentare.</p>
+        </div>
+        <div class="step" style="--d:140ms">
+          <h3>Poi si aggiusta, seduta per seduta.</h3>
+          <p>Ci si allena su appuntamento, e il programma si corregge man mano: quello che funziona
+          resta, quello che no si cambia. È il vantaggio di essere seguita da una persona sola.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LO STUDIO ============ -->
+  <section class="s" id="studio" style="padding-top:0">
+    <div class="wrap">
+      <h2>Lo studio</h2>
+      <div class="two">
+        <div>
+          <p class="prose">Siamo in <strong>Viale Dante 53 a Tione di Trento</strong>, comodo da
+          tutta la valle: da Preore, dalle Giudicarie e dalla Val Rendena si arriva in pochi minuti.</p>
+
+          <table class="hours">
+            <caption class="note" style="text-align:left;margin:0 0 .5rem">Orari di apertura</caption>
+            <tr><th>Da lunedì a venerdì</th><td>8:00 – 22:00</td></tr>
+            <tr><th>Sabato e domenica</th><td>chiuso</td></tr>
+          </table>
+          <p class="note"><span class="tbc">[Da confermare: parcheggio, piano, come si entra]</span></p>
+          <p class="note">Si entra su appuntamento, così l'ora è davvero tua.
+          Chi si allena già qui può continuare a prenotare da
+          <a href="https://www.sportclubby.com/it/tione-di-trento/tiziana-fedrizzi-studio-personal" target="_blank" rel="noopener">Sportclubby</a>, come ha sempre fatto.</p>
+        </div>
+
+        <!-- FOTO 2 — un dettaglio dello studio, non la panoramica -->
+        <div class="ph ph-square">
+          <span>
+            <b>Qui va un dettaglio</b>
+            <small>Un angolo, un attrezzo, la finestra. Serve a far capire che è un posto
+            vero e piccolo, non una catena.</small>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CHI SONO ============ -->
+  <section class="s" style="padding-top:0">
+    <div class="wrap">
+      <div class="two">
+        <!-- FOTO 3 — ritratto: in questo settore la faccia vende più dell'attrezzatura -->
+        <div class="ph ph-portrait">
+          <span>
+            <b>Qui va il tuo ritratto</b>
+            <small>In studio, non in posa. Chi cerca un personal trainer vuole sapere
+            chi gli metterà le mani addosso.</small>
+          </span>
+        </div>
+        <div>
+          <h2>Chi sono</h2>
+          <p class="prose" style="margin-top:1.1rem">Mi chiamo Tiziana Fedrizzi e alleno qui a
+          Tione, <span class="tbc">[da confermare: da quanti anni]</span>. Vengono da me persone
+          che in palestra non si sono mai trovate, sportivi che vogliono preparare una stagione e
+          chi sta tornando in piedi dopo un infortunio: sono lavori diversi, e non si fanno con la
+          stessa scheda.</p>
+          <p class="prose" style="margin-top:1rem">Quello che mi interessa è che tu capisca cosa
+          stiamo facendo e perché. Un esercizio che non sai spiegare è un esercizio che smetterai
+          di fare appena finisce il percorso.</p>
+          <p class="prose" style="margin-top:1rem"><span class="tbc">[Qui vanno i suoi titoli veri:
+          diploma o laurea, certificazioni, corsi di aggiornamento, con gli anni. In questo
+          settore i titoli sono metà della fiducia: me li scriva e li metto.]</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COSA DICONO ============ -->
+  <section class="s s-pine on-dark">
+    <div class="wrap">
+      <div class="two" style="margin-top:0;align-items:center">
+        <div>
+          <h2>Cosa dicono</h2>
+          <figure class="quote">
+            <blockquote>“Super competente, simpaticissima e sempre aggiornata.”</blockquote>
+            <figcaption>Da una recensione su Sportclubby, dove lo studio ha 5,0 su 5.</figcaption>
+          </figure>
+        </div>
+        <div>
+          <p class="score">5,0 <small>su 5 — 4 recensioni<br>verificate su Sportclubby</small></p>
+          <p style="margin-top:1.5rem;max-width:40ch">Sono poche perché quasi nessuno le chiede.
+          Se ti sei allenato qui, lasciarne una è il modo più veloce per farti trovare da chi
+          nella valle sta ancora cercando.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DOMANDE ============ -->
+  <section class="s" id="domande">
+    <div class="wrap">
+      <h2>Domande</h2>
+      <div class="qa">
+        <details open>
+          <summary>Non sono allenata da anni. È un problema?</summary>
+          <div class="a">È il punto di partenza più comune, e il motivo per cui uno studio privato
+          funziona meglio di una sala pesi. Si comincia da dove sei: il programma è scritto su
+          quello, non su dove dovresti essere.</div>
+        </details>
+        <details>
+          <summary>Quanto dura una seduta?</summary>
+          <div class="a"><span class="tbc">[Da confermare: durata e frequenza consigliata]</span>
+          L'orario si concorda quando si prenota, dalle 8 alle 22 dal lunedì al venerdì.</div>
+        </details>
+        <details>
+          <summary>Quanto costa?</summary>
+          <div class="a">Dipende dal percorso e da quante volte alla settimana ci si allena.
+          Scrivimi su WhatsApp cosa hai in mente e ti dico il prezzo esatto, senza giri di parole.
+          <span class="tbc">[Se vuole pubblicare i prezzi, il posto è questo: metà dei siti del
+          settore lo fa, e fa risparmiare le telefonate di chi non è nella fascia.]</span></div>
+        </details>
+        <details>
+          <summary>Devo fare un abbonamento?</summary>
+          <div class="a">No. Si prenota l'appuntamento, come dal dentista o dal fisioterapista.
+          Niente tessera annuale che poi si dimentica di usare.</div>
+        </details>
+        <details>
+          <summary>Cosa devo portare?</summary>
+          <div class="a"><span class="tbc">[Da confermare: scarpe da interno, asciugamano, acqua…]</span>
+          Nel dubbio chiedimelo quando prenoti: si risolve in un messaggio.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRENOTA ============ -->
+  <section class="s" id="prenota" style="padding-top:0">
+    <div class="wrap">
+      <h2>Prenota</h2>
+      <p class="prose" style="margin-top:1.1rem;color:var(--muted)">Scegli giorno e ora: parte un
+      messaggio WhatsApp già scritto, con la tua richiesta. Rispondo io per confermare — non è un
+      calendario automatico che poi ti mette in doppia prenotazione.</p>
+
+      <div class="book">
+        <div id="prenota-widget"></div>
+
+        <div class="contact">
+          <div class="row">
+            <div class="k">Telefono e WhatsApp</div>
+            <div class="v"><a href="tel:+393384417252">338 441 7252</a></div>
+          </div>
+          <div class="row">
+            <div class="k">Email</div>
+            <div class="v"><a href="mailto:info@tizianafedrizzi.it">info@tizianafedrizzi.it</a></div>
+          </div>
+          <div class="row">
+            <div class="k">Studio</div>
+            <div class="v"><a href="https://maps.google.com/?q=Viale+Dante+53,+38079+Tione+di+Trento" target="_blank" rel="noopener">Viale Dante 53<br>38079 Tione di Trento (TN)</a></div>
+          </div>
+          <div class="row">
+            <div class="k">Sei già cliente?</div>
+            <div class="v"><a href="https://www.sportclubby.com/it/tione-di-trento/tiziana-fedrizzi-studio-personal" target="_blank" rel="noopener">Prenota da Sportclubby</a></div>
+          </div>
+
+          <iframe class="map" title="Mappa dello studio in Viale Dante 53 a Tione di Trento"
+                  loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                  src="https://maps.google.com/maps?q=Viale%20Dante%2053%2C%2038079%20Tione%20di%20Trento&output=embed"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <h2>Tiziana Fedrizzi Studio Personal</h2>
+        <p>Personal training su appuntamento a Tione di Trento, per le Giudicarie e la Val Rendena.</p>
+      </div>
+      <div>
+        <p>Viale Dante 53<br>38079 Tione di Trento (TN)<br>
+        <a href="tel:+393384417252">338 441 7252</a><br>
+        <a href="mailto:info@tizianafedrizzi.it">info@tizianafedrizzi.it</a></p>
+      </div>
+      <div>
+        <p>Lunedì – venerdì 8:00 – 22:00<br>Sabato e domenica chiuso</p>
+        <p style="margin-top:.75rem"><a href="https://www.facebook.com/tizianafedrizzips/" target="_blank" rel="noopener">Facebook</a> ·
+        <a href="https://www.sportclubby.com/it/tione-di-trento/tiziana-fedrizzi-studio-personal" target="_blank" rel="noopener">Sportclubby</a></p>
+      </div>
+    </div>
+    <div class="fine">
+      <span>© 2026 Tiziana Fedrizzi</span>
+      <span class="tbc">[P. IVA da inserire]</span>
+      <span class="tbc">[Privacy policy da collegare]</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Modulo prenotazioni: prodotto automazioni/prodotti/prenotazioni (widget-prenota.js).
+     Inline perché nella pagina c'è <div id="prenota-widget">. Orari e chiusure da Sportclubby. -->
+<script src="widget-prenota.js"
+        data-nome="Tiziana Fedrizzi Studio Personal"
+        data-whatsapp="393384417252"
+        data-telefono="+39 338 441 7252"
+        data-colore="#C2431B"
+        data-tipo="appuntamento"
+        data-servizi="Primo incontro conoscitivo,Personal training,Programma + piano alimentare"
+        data-orari="08:00-21:00"
+        data-chiuso="sab,dom"
+        data-anticipo-min-ore="3"
+        data-nota-esempio="es. non mi alleno da anni, mal di schiena, preparo una gara"></script>
+
+<script>
+/* Stagger su UNA lista vera (i tre passaggi). Il contenuto è già visibile senza JS. */
+(function () {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  if (!("IntersectionObserver" in window)) return;
+  var steps = document.querySelectorAll(".step");
+  if (!steps.length) return;
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) { e.target.classList.add("is-in"); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.2, rootMargin: "0px 0px -8% 0px" });
+  steps.forEach(function (s) { io.observe(s); });
+})();
+</script>
+</body>
+</html>

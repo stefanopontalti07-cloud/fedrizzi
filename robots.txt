@@ -1,0 +1,3 @@
+# Anteprima: chiusa ai motori finche' il sito non va su tizianafedrizzi.it
+User-agent: *
+Disallow: /
